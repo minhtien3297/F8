@@ -12,6 +12,8 @@
   --dimgray: #757575;
   --lightgray: #ddd;
   --red: #f44336;
+  --green: #009688;
+  --blue: #2197f2;
 }
 
 html {
@@ -296,4 +298,94 @@ html {
   background-color: var(--gray);
   color: var(--black);
   cursor: pointer;
+}
+
+#modal {
+}
+
+#modal.modal__overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal .modal {
+  background-color: var(--white);
+  width: calc(100% - 400px);
+}
+
+#modal .modal .modal__header {
+  background-color: var(--green);
+  height: 150px;
+  text-align: center;
+}
+
+#modal .modal .modal__header .modal__close {
+  border: none;
+  padding: 15px;
+  float: right;
+  font-size: 2rem;
+  color: var(--white);
+  background-color: transparent;
+}
+
+#modal .modal .modal__header .modal__close:hover {
+  cursor: pointer;
+  color: var(--black);
+  background-color: var(--gray);
+}
+
+#modal .modal .modal__header .modal__title {
+  line-height: 150px;
+  color: var(--white);
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+
+#modal .modal .modal__body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+#modal .modal .modal__body .modal__label {
+  font-size: 1.5rem;
+}
+
+#modal .modal .modal__body .modal__input {
+  border: 1px solid var(--gray);
+  margin: 15px 0;
+  padding: 10px;
+}
+
+#modal .modal .modal__body .pay__btn {
+  border: none;
+  color: var(--white);
+  background-color: var(--green);
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+#modal .modal .modal__body .pay__btn:hover {
+  color: var(--black);
+  background-color: var(--gray);
+  cursor: pointer;
+}
+
+#modal .modal .modal__body .modal__help {
+  margin: 25px 0;
+  text-align: right;
+  font-size: 1.5rem;
+}
+
+#modal .modal .modal__body .modal__help a {
+  color: var(--blue);
 }

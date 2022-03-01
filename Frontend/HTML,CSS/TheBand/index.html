@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <title>The Band</title>
 </head>
 
@@ -134,7 +134,45 @@
             </div>
         </div>
 
+
+
         <div id="footer"></div>
+    </div>
+
+    <div id="modal" class="modal__overlay">
+        <div class="modal">
+            <div class="modal__header">
+                <button class="modal__close">
+                    x
+                </button>
+
+                <div class="modal__title">
+                    <i class="fa-solid fa-suitcase"></i>
+                    Tickets
+                </div>
+            </div>
+
+            <div class="modal__body">
+                <div class="modal__label">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Tickets, $15 per person
+                </div>
+                <input type="text" class="modal__input" placeholder="How many?" />
+
+                <div class="modal__label">
+                    <i class="fa-solid fa-user"></i>
+                    Send To
+                </div>
+                <input type="email" class="modal__input" placeholder="Enter email" />
+
+                <button class="pay__btn">
+                    pay
+                    <i class="fa-solid fa-check"></i>
+                </button>
+
+                <span class="modal__help">Need <a href="">help?</a></span>
+            </div>
+        </div>
     </div>
 </body>
 
