@@ -21,6 +21,28 @@ html {
   font-size: 62.5%;
 }
 
+/* common */
+.content__section {
+  margin: 9rem auto 11rem auto;
+  width: 80rem;
+  text-align: center;
+}
+
+.content__section .section__heading {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin: 1rem 0;
+}
+
+.content__section .section__sub__heading {
+  font-style: italic;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  opacity: 0.6;
+}
+/* main */
+
 #main {
 }
 
@@ -158,26 +180,6 @@ html {
 #content {
 }
 
-.content__section {
-  margin: 9rem auto 11rem auto;
-  width: 80rem;
-  text-align: center;
-}
-
-.content__section .section__heading {
-  font-size: 3rem;
-  font-weight: 400;
-  letter-spacing: 4px;
-  margin: 1rem 0;
-}
-
-.content__section .section__sub__heading {
-  font-style: italic;
-  font-size: 1.5rem;
-  margin: 1.5rem 0;
-  opacity: 0.6;
-}
-
 #content .content__section .about {
   text-align: justify;
   margin: 1.5rem 0;
@@ -286,7 +288,7 @@ html {
   margin: 15px 0;
 }
 
-#tour .tickets__place .ticket__info .ticket__wrapper .buy__btn {
+.btn {
   background-color: var(--black);
   color: var(--white);
   border: none;
@@ -294,10 +296,79 @@ html {
   padding: 10px 15px;
 }
 
-#tour .tickets__place .ticket__info .ticket__wrapper .buy__btn:hover {
+.btn:hover {
   background-color: var(--gray);
   color: var(--black);
   cursor: pointer;
+}
+
+#contact {
+}
+
+#contact .contact__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 5rem;
+}
+
+#contact .contact__section .contact__info {
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: left;
+}
+
+#contact .contact__section .contact__form {
+  text-align: right;
+}
+
+#contact .contact__section .contact__form .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#contact .contact__section .contact__form .row input {
+  border: 1px solid var(--lightgray);
+  padding: 15px;
+}
+
+#contact .contact__section .contact__form .row .contact__input {
+  width: 49%;
+}
+
+#contact .contact__section .contact__form .row .contact__mes {
+  width: 100%;
+}
+
+#img__background {
+}
+
+#img__background .background {
+  width: 100%;
+  margin-bottom: 7rem;
+}
+
+#footer {
+  text-align: center;
+  color: var(--black);
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+#footer .social__icons .icon {
+  color: var(--black);
+  font-size: 2.5em;
+}
+
+#footer .watermark {
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  font-size: 1.5em;
+}
+
+#footer .watermark a {
+  color: var(--black);
 }
 
 #modal {
