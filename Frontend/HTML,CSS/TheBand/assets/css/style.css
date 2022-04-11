@@ -27,6 +27,8 @@ html {
   margin: 9rem auto 11rem auto;
   width: 80rem;
   text-align: center;
+  padding-left: 13px;
+  padding-right: 13px;
 }
 
 .content__section .section__heading {
@@ -45,6 +47,7 @@ html {
 /* main */
 
 #main {
+  width: fit-content;
 }
 
 #header {
