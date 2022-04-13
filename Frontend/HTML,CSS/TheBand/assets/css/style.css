@@ -44,6 +44,21 @@ html {
   margin: 1.5rem 0;
   opacity: 0.6;
 }
+
+.btn {
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  margin-top: 15px;
+  padding: 10px 15px;
+}
+
+.btn:hover {
+  background-color: var(--gray);
+  color: var(--black);
+  cursor: pointer;
+}
+
 /* main */
 
 #main {
@@ -58,7 +73,8 @@ html {
   display: flex;
   background-color: var(--black);
   color: var(--white);
-  height: 4.65rem;
+  height: 47px;
+  overflow: hidden;
   z-index: 1;
 }
 
@@ -149,6 +165,10 @@ html {
 #header .fa-search:hover {
   cursor: pointer;
   background-color: var(--red);
+}
+
+#header .btn__menu__bar {
+  display: none;
 }
 
 #slider {
@@ -290,20 +310,6 @@ html {
 #tour .tickets__place .ticket__info .ticket__wrapper .ticket__date {
   color: var(--dimgray);
   margin: 15px 0;
-}
-
-.btn {
-  background-color: var(--black);
-  color: var(--white);
-  border: none;
-  margin-top: 15px;
-  padding: 10px 15px;
-}
-
-.btn:hover {
-  background-color: var(--gray);
-  color: var(--black);
-  cursor: pointer;
 }
 
 #contact {

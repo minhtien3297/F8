@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
@@ -28,7 +29,7 @@
             <a href="#contact" class="nav__item__link">Contact</a>
           </li>
           <li class="nav__item">
-            <a href="#footer" class="nav__item__link">More</a>
+            <a href="#" class="nav__item__link">More</a>
             <span class="arrow--down"></span>
             <ul class="sub__nav">
               <li class="sub__item">
@@ -45,6 +46,9 @@
         </ul>
 
         <i class="fas fa-search"></i>
+        <button class="btn__menu__bar" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
 
       <div id="slider">
@@ -185,30 +189,55 @@
 
           <div class="contact__section">
             <div class="contact__info">
-                <p class="info"><i class="fa-solid fa-location-dot"></i>  Chicago, US</p>
-                <p class="info"><i class="fa-solid fa-phone"></i></i>  Phone: +00 151515</>
-                <p class="info"><i class="fa-solid fa-envelope"></i>  Email: mail@mail.com</p>
+              <p class="info">
+                <i class="fa-solid fa-location-dot"></i> Chicago, US
+              </p>
+              <p class="info">
+                <i class="fa-solid fa-phone"></i> Phone: +00 151515
+              </p>
+              <p class="info">
+                <i class="fa-solid fa-envelope"></i> Email: mail@mail.com
+              </p>
             </div>
 
             <form class="contact__form">
-                <div class="row">
-                    <input type="text" class="contact__input" placeholder="Name" required>
-                    <input type="email" class="contact__input" placeholder="Email" required>
-                </div>
-                <div class="row"><input type="text" class="contact__mes" placeholder="Message" required></div>
-                <button class="btn" type='submit'>SEND</button>
+              <div class="row">
+                <input
+                  type="text"
+                  class="contact__input"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  type="email"
+                  class="contact__input"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="row">
+                <input
+                  type="text"
+                  class="contact__mes"
+                  placeholder="Message"
+                  required
+                />
+              </div>
+              <button class="btn" type="submit">SEND</button>
             </form>
           </div>
         </div>
       </div>
 
       <div id="img__background">
-        <img src="../assets/img/map.jpg" alt="background" class="background">
+        <img src="../assets/img/map.jpg" alt="background" class="background" />
       </div>
 
       <div id="footer">
         <div class="social__icons">
-          <a href="" class="icon"><i class="fa-brands fa-facebook-square"></i></a>
+          <a href="" class="icon"
+            ><i class="fa-brands fa-facebook-square"></i
+          ></a>
           <a href="" class="icon"><i class="fa-brands fa-instagram"></i></a>
           <a href="" class="icon"><i class="fa-brands fa-snapchat"></i></a>
           <a href="" class="icon"><i class="fa-brands fa-pinterest-p"></i></a>
@@ -253,5 +282,27 @@
         </div>
       </div>
     </div>
+
+    <script>
+      var header = document.getElementById('header');
+
+      function toggleMenu() {
+        var isClosed = header.clientHeight === 47;
+
+        if (isClosed) {
+          header.style.height = 'auto';
+        } else {
+          header.style.height = '47px';
+        }
+      }
+
+      var navs = document.querySelectorAll('.nav__item');
+
+      navs.forEach((nav) => {
+        nav.onclick = function () {
+          header.style.height = '47px';
+        };
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,47 @@
+/* breakpoint */
+
+/* mobile */
+@media (max-width: 767px) {
+  #header {
+    height: auto;
+  }
+
+  #header .nav {
+    display: block;
+  }
+
+  #header .nav .nav__item {
+    text-align: left;
+    padding-bottom: 20px;
+  }
+
+  #header .nav .nav__item .nav__item__link {
+    font-size: 25px;
+    padding-right: 100%;
+  }
+
+  #header .fa-search {
+    display: none;
+  }
+
+  #header .btn__menu__bar {
+    display: block;
+    background-color: var(--black);
+    color: var(--white);
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: none;
+    height: 47px;
+    width: 7rem;
+    font-size: 20px;
+  }
+}
+
+/* tablet */
+@media (min-width: 767px) and (max-width: 1024px) {
+}
+
+/* PC */
+@media (min-width: 1024px) {
+}
